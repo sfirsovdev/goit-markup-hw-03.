@@ -1,0 +1,481 @@
+:root {
+  --main-text-color: #757575;
+  --second-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --background-color: #2f303a;
+  --text-color: #ffffff;
+  --background-text-color: #0f5996;
+  --section-color: #f5f4fa;
+  --border-bottom: #ececec;
+  --border-portfolio-cards: #eeeeee;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body---------------------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--text-color);
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  color: var(--main-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-main {
+  display: flex;
+}
+/* Container -------------------------------*/
+
+/* Header --------------------------------- */
+
+.page-header {
+  border-bottom: 1px solid var(--border-bottom);
+}
+
+.page-header-color-logo {
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--second-text-color);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.page-header-color-logo {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.page-header-color-logo:hover {
+  color: var(--accent-text-color);
+}
+
+.page-header-color-logo span {
+  font-family: raleway;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--accent-text-color);
+  letter-spacing: 0.03em;
+}
+
+.contact {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--main-text-color-text-color);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--accent-text-color);
+}
+
+/* Nav------------------------------------  */
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .item {
+  margin-top: 32px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .link {
+  color: var(--second-text-color);
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+.link-current {
+  display: block;
+  text-decoration: none;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+.contact {
+  margin-top: 32px;
+  margin-left: 331px;
+  display: flex;
+}
+
+.contact .item + .item {
+  margin-left: 50px;
+}
+
+/* Hero------------------------------------ */
+
+.hero {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  height: 600px;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  color: var(--text-color);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: var(--accent-text-color);
+  color: var(--text-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--background-text-color);
+}
+
+/* Section -----------------------------*/
+
+.section-advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.item-advantages {
+  width: 270px;
+}
+.item-advantages + .item-advantages {
+  margin-left: 30px;
+}
+
+.section-title {
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.section-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.section-what-we-do {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-what-we-do-title {
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--second-text-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.item-what-we-do + .item-what-we-do {
+  margin-left: 30px;
+}
+
+/* Наша команда -----------------------------*/
+
+.section-comand {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--section-color);
+}
+
+.section-comand-title {
+  margin-bottom: 30px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.section-name {
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.section-professions {
+  padding-bottom: 30px;
+  background-color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.item-our-comand .img {
+  display: block;
+}
+
+.item-our-comand + .item-our-comand {
+  margin-left: 30px;
+}
+
+/* Футер----------------------------------- */
+
+.adress {
+  padding-top: 20px;
+  font-style: normal;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-color);
+}
+
+.page-footer-color-logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: default;
+}
+
+.page-footer-color-logo:hover {
+  color: var(--accent-text-color);
+}
+
+.page-footer-color-logo span {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+}
+
+.title-adress {
+  display: block;
+  padding-bottom: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: default;
+}
+
+.title-adress:hover,
+.title-adress:focus {
+  color: var(--accent-text-color);
+}
+
+.title-adress-post {
+  display: block;
+  padding-bottom: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  cursor: default;
+}
+
+.title-adress-post:hover {
+  color: var(--accent-text-color);
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+/* CSS Porfolio ----------------------------*/
+
+/* Body---------------------------------  */
+
+body {
+  background-color: var(--text-color);
+  color: var(--main-text-color);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Site nav-------------------------------  */
+
+.site-nav .link-current {
+  color: var(--accent-text-color);
+}
+
+/* Portfolio Button------------------------ */
+
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button-item + .button-item {
+  padding-left: 8px;
+}
+
+.button-portfolio {
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 34px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: var(--section-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background: var(--accent-text-color);
+  color: var(--text-color);
+}
+
+.portfolio-name {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-text-color);
+}
+
+.portfolio-surname {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.portfolio-border {
+  border: solid 1px var(--border-portfolio-cards);
+}
+
+.portfolio-cards {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.cards-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.cards-item img {
+  display: block;
+}
+
+.cards-item:nth-child(3n) {
+  margin-right: 0;
+}
