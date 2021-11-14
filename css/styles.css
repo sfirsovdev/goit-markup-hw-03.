@@ -258,6 +258,7 @@ ul {
 /* Наша команда -----------------------------*/
 
 .section-comand {
+  padding-top: 186px;
   background-color: var(--section-color);
 }
 
