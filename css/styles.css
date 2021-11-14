@@ -48,6 +48,11 @@ ul {
   list-style: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -206,12 +211,9 @@ ul {
 }
 
 /* Section -----------------------------*/
-
 .section-advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
-
 .item-advantages {
   width: 270px;
 }
@@ -236,10 +238,6 @@ ul {
   color: var(--main-text-color);
 }
 
-.section-what-we-do {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .section-what-we-do-title {
   padding-bottom: 50px;
   font-weight: 700;
@@ -257,13 +255,10 @@ ul {
 /* Наша команда -----------------------------*/
 
 .section-comand {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--section-color);
 }
 
 .section-comand-title {
-  padding-top: 94px;
   padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -397,10 +392,6 @@ ul {
 
 /* Portfolio Button------------------------ */
 
-.section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .button {
   display: flex;
   justify-content: center;
