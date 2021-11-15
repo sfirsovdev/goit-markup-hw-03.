@@ -225,7 +225,7 @@ ul {
 }
 
 .section-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -242,7 +242,7 @@ ul {
 }
 
 .section-what-we-do-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -258,12 +258,11 @@ ul {
 /* Наша команда -----------------------------*/
 
 .section-comand {
-  padding-top: 186px;
   background-color: var(--section-color);
 }
 
 .section-comand-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
@@ -273,28 +272,24 @@ ul {
 }
 
 .section-name {
-  margin-top: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
-
-  background-color: var(--text-color);
+  margin-bottom: 10px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 
 .section-professions {
-  padding-bottom: 30px;
-  background-color: var(--text-color);
   font-weight: 400;
+  color: var(--main-text-color);
+}
+
+.name-professions {
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  background-color: var(--text-color);
 }
 
 .item-our-comand .img {
@@ -308,7 +303,7 @@ ul {
 /* Футер----------------------------------- */
 
 .adress {
-  padding-top: 20px;
+  margin-top: 20px;
   font-style: normal;
 }
 
@@ -343,7 +338,7 @@ ul {
 
 .title-adress {
   display: block;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.8;
@@ -358,9 +353,26 @@ ul {
   color: var(--accent-text-color);
 }
 
+.title-adress-tel:hover,
+.title-adress-tel:focus {
+  color: var(--accent-text-color);
+}
+
 .title-adress-post {
   display: block;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  cursor: default;
+}
+
+.title-adress-tel {
+  display: block;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.8;
@@ -399,6 +411,7 @@ ul {
 
 .button {
   display: flex;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -409,7 +422,7 @@ ul {
 .button-portfolio {
   border: none;
   border-radius: 4px;
-  margin-bottom: 34px;
+
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 6px;
@@ -432,11 +445,6 @@ ul {
 }
 
 .portfolio-name {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 20px;
-  padding-bottom: 4px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -445,10 +453,6 @@ ul {
 }
 
 .portfolio-surname {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
@@ -457,6 +461,7 @@ ul {
 }
 
 .portfolio-border {
+  padding: 20px 24px;
   border: solid 1px var(--border-portfolio-cards);
 }
 
@@ -476,4 +481,8 @@ ul {
 
 .cards-item:nth-child(3n) {
   margin-right: 0;
+}
+
+.cards-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
